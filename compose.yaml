@@ -1,0 +1,5 @@
+services:
+  toggler:
+    build: .
+    privileged: true
+
