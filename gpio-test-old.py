@@ -3,8 +3,9 @@
 import RPi.GPIO as GPIO
 import time
 
-led = 7
+print('start')
 
+led = 33 # GPIO13
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(led, GPIO.OUT)
 

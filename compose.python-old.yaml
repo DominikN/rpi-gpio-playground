@@ -1,0 +1,18 @@
+# docker compose -f compose.python-old.yaml up --build
+
+# services:
+#   toggler:
+#     build:
+#       context: .
+#       dockerfile: Dockerfile.python-old
+#     privileged: true
+
+services:
+  toggler:
+    build:
+      context: .
+      dockerfile: Dockerfile.python-old
+    devices:
+      - /dev/gpiomem
+    tty: true
+

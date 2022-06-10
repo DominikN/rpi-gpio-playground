@@ -1,0 +1,9 @@
+# docker compose -f compose.python-lgpio.yaml up
+
+services:
+  toggler:
+    build:
+      context: .
+      dockerfile: Dockerfile.python-lgpio
+    privileged: true
+
