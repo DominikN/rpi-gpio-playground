@@ -1,0 +1,8 @@
+services:
+  toggler:
+    build:
+      context: .
+      dockerfile: Dockerfile.bash
+    volumes:
+      - /sys/class/gpio/gpio4:/sys/class/gpio/gpio4
+      - /dev/gpiomem:/dev/gpiomem

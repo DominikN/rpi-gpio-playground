@@ -1,0 +1,9 @@
+# docker compose -f compose.python.yaml up
+
+services:
+  toggler:
+    build:
+      context: .
+      dockerfile: Dockerfile.python
+    privileged: true
+
