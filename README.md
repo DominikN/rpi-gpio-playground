@@ -48,8 +48,7 @@ Add lines:
 
 ```bash
 # Enable the serial pins
-enable_uart=1
-dtoverlay=uart0,txd0_pin=14,rxd0_pin=15,pin_func=4
+# enable_uart=1 # comment to use uart0 as primary
 
 # Disable Bluetooth
 dtoverlay=disable-bt
@@ -135,4 +134,14 @@ UART4 is listing under `/dev/ttyAMA1` now:
 $ ls -la /dev/ttyAMA*
 crw--w---- 1 root tty     204, 64 Jun 13 17:27 /dev/ttyAMA0
 crw-rw---- 1 root dialout 204, 65 Jun 13 17:27 /dev/ttyAMA1
+```
+
+```
+        TXD RXD CTS RTS     Board Pins
+uart0   14  15              8   10
+uart1   14  15              8   10
+uart2   0   1   2   3       27  28  (I2C)
+uart3   4   5   6   7       7   29
+uart4   8   9   10  11      24  21  (SPI0)
+uart5   12  13  14  15      32  33  (gpio-fan)
 ```

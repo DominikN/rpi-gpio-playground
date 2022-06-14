@@ -5,7 +5,7 @@ import time
 
 print('start')
 
-led = 33 # GPIO13
+led = 12 # GPIO18
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(led, GPIO.OUT)
 

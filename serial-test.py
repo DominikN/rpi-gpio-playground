@@ -3,7 +3,8 @@
 import serial
 import time
 
-ser = serial.Serial('/dev/ttyS0', 115200)  # open serial port
+# ser = serial.Serial('/dev/ttyAMA0', 115200)  # open serial port
+ser = serial.Serial('/dev/serial0', 115200)  # open serial port
 
 while True:
     print(ser.name)         # check which port was really used

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export LED=13 # pin 33
+export LED=18 # pin 33
 
 echo $LED > /sys/class/gpio/export
 echo "out" > /sys/class/gpio/gpio$LED/direction
